@@ -15,3 +15,7 @@ However, when inside the function, you can see the full code and all data from
 the outside is typed already, thus the chance of errors slipping in is
 significantly lower. Therefore I prefer that little bit more freedom from 
 Javascript and not having to worry about every single variable's type.
+
+One big downside to this approach however is that it doesn't work well with
+generics as you cannot pass the generic type argument when calling the function
+thus it is infered, which is sometimes only the partial type.
